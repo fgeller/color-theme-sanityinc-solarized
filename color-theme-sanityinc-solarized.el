@@ -183,19 +183,17 @@ names to which it refers are bound."
      (ido-only-match ((t (:foreground ,green))))
 
      ;; Emacs interface
-     (cursor ((t (:background ,magenta))))
+     (cursor ((t (:background ,blue))))
      (fringe ((t (:background ,alt-background))))
      (border ((t (:background ,alt-background))))
      (border-glyph ((t (nil))))
      (highlight ((t (:inverse-video nil :background ,alt-background))))
      (gui-element ((t (:background ,alt-background :foreground ,normal))))
-     (mode-line ((t (:foreground nil :background ,alt-background :weight bold
-                                 :box (:line-width 1 :color ,normal)))))
-     (mode-line-buffer-id ((t (:foreground ,magenta :background nil))))
+     (mode-line ((t (:foreground nil :background ,alt-background))))
+     (mode-line-buffer-id ((t (:foreground ,green :background nil :weight normal))))
      (mode-line-inactive ((t (:inherit mode-line
                                        :foreground ,faintest
-                                       :background ,alt-background :weight normal
-                                       :box (:line-width 1 :color ,normal)))))
+                                       :background ,alt-background :weight normal))))
      (mode-line-emphasis ((t (:foreground ,strong))))
      (mode-line-highlight ((t (:foreground ,magenta :box nil :weight bold))))
      (minibuffer-prompt ((t (:foreground ,blue))))
