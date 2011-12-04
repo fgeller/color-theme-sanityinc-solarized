@@ -203,6 +203,16 @@ names to which it refers are bound."
      (header-line ((t (:background nil :foreground ,strong :inherit nil))))
      (trailing-whitespace ((t (:inherit font-lock-warning-face :foreground nil :background nil :inverse-video t))))
 
+     ;; Whitespace mode
+     (whitespace-line ((t (:background nil :foreground ,faintest))))
+     (whitespace-indentation ((t (:background nil :foreground ,faintest))))
+     (whitespace-newline ((t (:background nil :foreground ,faintest))))
+     (whitespace-space ((t (:background nil :foreground ,faintest))))
+     (whitespace-space-after-tab ((t (:background nil :foreground ,faintest))))
+     (whitespace-space-before-tab ((t (:background nil :foreground ,faintest))))
+     (whitespace-tab ((t (:background nil :foreground ,faintest))))
+     (whitespace-trailing ((t (:background ,red :foreground ,faintest))))
+
      ;; Parenthesis matching (built-in)
      (show-paren-match ((t (:background nil :foreground nil :inverse-video t))))
      (show-paren-mismatch ((t (:background ,magenta :foreground ,background))))
