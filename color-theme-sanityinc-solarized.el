@@ -109,7 +109,7 @@ names to which it refers are bound."
      (font-lock-string-face ((t (:foreground ,cyan))))
      (font-lock-type-face ((t (:foreground ,yellow))))
      (font-lock-variable-name-face ((t (:foreground ,yellow))))
-     (font-lock-warning-face ((t (:weight bold :foreground ,red))))
+     (font-lock-warning-face ((t (:foreground ,red))))
      (shadow ((t (:foreground ,(fourth foregrounds)))))
      (success ((t (:foreground ,green))))
      (error ((t (:foreground ,red))))
