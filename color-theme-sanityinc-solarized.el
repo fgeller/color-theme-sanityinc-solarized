@@ -155,6 +155,13 @@ names to which it refers are bound."
      (anything-visible-mark ((,class (:foreground ,blue))))
      (anything-w3m-bookmarks-face ((,class (:foreground ,blue))))
 
+     ;; auto-complete
+     (ac-candidate-face ((,class (:background ,alt-background :foreground ,normal :underline nil))))
+     (ac-selection-face ((,class (:background ,blue :foreground ,background))))
+     (ac-completion-face ((,class (:foreground ,faintest :underline nil))))
+
+     (popup-tip-face ((,class (:background ,alt-background :foreground ,normal))))
+
      ;; Clojure errors
      (clojure-test-failure-face ((,class (:background nil :inherit flymake-warnline))))
      (clojure-test-error-face ((,class (:background nil :inherit flymake-errline))))
@@ -192,13 +199,9 @@ names to which it refers are bound."
      (border-glyph ((,class (nil))))
      (highlight ((,class (:inverse-video nil :background ,alt-background))))
      (gui-element ((,class (:background ,alt-background :foreground ,normal))))
-     (mode-line ((,class (:foreground nil :background ,alt-background :weight bold
-                                 :box (:line-width 1 :color ,normal)))))
+     (mode-line ((,class (:foreground nil :background ,alt-background :weight normal :box nil))))
      (mode-line-buffer-id ((,class (:foreground ,green :background nil :weight normal))))
-     (mode-line-inactive ((,class (:inherit mode-line
-                                       :foreground ,faintest
-                                       :background ,alt-background :weight normal
-                                       :box (line-width 1 :color ,normal)))))
+     (mode-line-inactive ((,class (:inherit mode-line :foreground ,faintest :background ,alt-background :weight normal :box nil))))
      (mode-line-emphasis ((,class (:foreground ,strong))))
      (mode-line-highlight ((,class (:foreground ,magenta :box nil :weight bold))))
      (minibuffer-prompt ((,class (:foreground ,blue))))
@@ -326,9 +329,19 @@ names to which it refers are bound."
      (py-builtins-face ((,class (:foreground ,orange :weight normal))))
 
      ;; js2-mode
-     (js2-warning ((,class (:underline ,orange))))
-     (js2-error ((,class (:underline ,red))))
-     (js2-function-param ((,class (:foreground ,green))))
+     (js2-warning-face ((,class (:foreground ,orange))))
+     (js2-error-face ((,class (:foreground ,red))))
+     (js2-external-variable-face ((,class (:foreground ,magenta))))
+     (js2-function-param-face ((,class (:foreground ,green))))
+     (js2-instance-member-face ((,class (:foreground ,violet))))
+     (js2-jsdoc-html-tag-delimiter-face ((,class (:foreground ,faintest))))
+     (js2-jsdoc-html-tag-name-face ((,class (:foreground ,green))))
+     (js2-jsdoc-tag-face ((,class (:foreground ,faintest))))
+     (js2-jsdoc-type-face ((,class (:foreground ,green))))
+     (js2-jsdoc-value-face ((,class (:foreground ,yellow))))
+     (js2-private-member-face ((,class (:foreground ,yellow))))
+     (js2-private-function-call-face ((,class (:foreground ,orange))))
+
 
      ;; nxml
      (nxml-name-face ((,class (:foreground unspecified :inherit font-lock-constant-face))))
