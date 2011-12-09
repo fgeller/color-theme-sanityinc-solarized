@@ -303,8 +303,9 @@ names to which it refers are bound."
      (py-builtins-face ((t (:foreground ,orange :weight normal))))
 
      ;; js2-mode
-     (js2-warning ((t (:underline ,yellow))))
+     (js2-warning ((t (:underline ,orange))))
      (js2-error ((t (:underline ,red))))
+     (js2-function-param ((t (:foreground ,green))))
 
      ;; nxml
      (nxml-name-face ((t (:foreground unspecified :inherit font-lock-constant-face))))
