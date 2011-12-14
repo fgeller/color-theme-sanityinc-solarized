@@ -287,12 +287,31 @@ names to which it refers are bound."
      (slime-repl-result-face ((,class (:foreground ,green))))
      (slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
+     ;; diff
      (diff-added ((,class (:foreground ,green))))
      (diff-changed ((,class (:foreground ,violet))))
      (diff-removed ((,class (:foreground ,orange))))
      (diff-header ((,class (:foreground ,cyan :background nil))))
      (diff-file-header ((,class (:foreground ,blue :background nil))))
      (diff-hunk-header ((,class (:foreground ,magenta))))
+
+     ;; ediff
+     (ediff-current-diff-A ((,class (:foreground nil :background ,alt-background))))
+     (ediff-current-diff-B ((,class (:foreground nil :background ,alt-background))))
+     (ediff-current-diff-C ((,class (:foreground nil :background ,alt-background))))
+     (ediff-current-diff-Ancestor ((,class (:foreground nil :background ,alt-background))))
+     (ediff-even-diff-A ((,class (:foreground nil :background ,faintest))))
+     (ediff-even-diff-B ((,class (:foreground nil :background ,faintest))))
+     (ediff-even-diff-C ((,class (:foreground nil :background ,faintest))))
+     (ediff-even-diff-Ancestor ((,class (:foreground nil :background ,faintest))))
+     (ediff-odd-diff-A ((,class (:foreground nil :background ,faintest))))
+     (ediff-odd-diff-B ((,class (:foreground nil :background ,faintest))))
+     (ediff-odd-diff-C ((,class (:foreground nil :background ,faintest))))
+     (ediff-odd-diff-Ancestor ((,class (:foreground nil :background ,faintest))))
+     (ediff-fine-diff-A ((,class (:foreground ,red :background nil :weight bold))))
+     (ediff-fine-diff-B ((,class (:foreground ,red :background nil :weight bold))))
+     (ediff-fine-diff-C ((,class (:foreground ,red :background nil :weight bold))))
+     (ediff-fine-diff-Ancestor ((,class (:foreground ,green :background nil :weight bold))))
 
      ;; undo-tree
      (undo-tree-visualizer-default-face ((,class (:foreground ,normal))))
