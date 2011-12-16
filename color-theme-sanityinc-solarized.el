@@ -234,9 +234,9 @@ names to which it refers are bound."
      (isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
 
      ;; IDO
-     (ido-subdir ((,class (:foreground ,magenta))))
-     (ido-first-match ((,class (:foreground ,yellow))))
-     (ido-only-match ((,class (:foreground ,green))))
+     (ido-subdir ((,class (:foreground ,faintest))))
+     (ido-first-match ((,class (:foreground ,green))))
+     (ido-only-match ((,class (:foreground ,cyan))))
 
      ;; Emacs interface
      (cursor ((,class (:background ,blue))))
@@ -362,8 +362,8 @@ names to which it refers are bound."
 
      ;; Grep
      (grep-context-face ((,class (:foreground ,faint))))
-     (grep-error-face ((,class (:foreground ,red :weight bold :underline t))))
-     (grep-hit-face ((,class (:foreground ,blue))))
+     (grep-error-face ((,class (:foreground ,red :weight normal :underline t))))
+     (grep-hit-face ((,class (:foreground ,blue :weight normal))))
      (grep-match-face ((,class (:foreground nil :background nil :inherit match))))
 
      ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
