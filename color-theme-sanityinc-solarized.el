@@ -279,7 +279,7 @@ names to which it refers are bound."
      ;; Parenthesis dimming (parenface)
      (paren-face ((,class (:foreground ,faintest :background nil))))
 
-     (sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face))))
+     (sh-heredoc ((,class (:foreground nil :inherit font-lock-string-face :weight normal))))
      (sh-quoted-exec ((,class (:foreground nil :inherit font-lock-preprocessor-face))))
      (slime-highlight-edits-face ((,class (:foreground ,strong))))
      (slime-repl-input-face ((,class (:weight normal :underline nil))))
@@ -337,28 +337,26 @@ names to which it refers are bound."
      (diredp-write-priv ((,class (:foreground ,yellow :background nil))))
 
      ;; Magit (a patch is pending in magit to make these standard upstream)
+     (magit-branch ((,class (:foreground ,green))))
      (magit-item-highlight ((,class (:inherit highlight :background nil))))
-     (magit-diff-add ((,class (:inherit diff-added :foreground nil))))
-     (magit-diff-changed ((,class (:inherit diff-changed :foreground nil))))
-     (magit-diff-del ((,class (:inherit diff-removed :foreground nil))))
      (magit-log-graph ((,class (:foreground ,faintest))))
+     (magit-log-sha1 ((,class (:foreground ,yellow))))
+     (magit-log-head-label-bisect-bad ((,class (:foreground ,red))))
+     (magit-log-head-label-bisect-good ((,class (:foreground ,green))))
+     (magit-log-head-label-default ((,class (:foreground ,yellow :box nil :weight bold))))
+     (magit-log-head-label-local ((,class (:foreground ,magenta :box nil :weight bold))))
+     (magit-log-head-label-remote ((,class (:foreground ,violet :box nil :weight bold))))
+     (magit-log-head-label-tags ((,class (:foreground ,cyan :box nil :weight bold))))
+     (magit-section-title ((,class (:foreground ,blue :weight bold))))
 
      (link ((,class (:foreground nil :underline t))))
      (widget-button ((,class (:underline t))))
      (widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,normal)))))
 
-     ;; compilation
-     (compilation-column-face ((,class (:foreground ,yellow))))
-     (compilation-enter-directory-face ((,class (:foreground ,green))))
-     (compilation-error-face ((,class (:foreground ,red :weight bold :underline t))))
-     (compilation-face ((,class (:foreground ,normal))))
-     (compilation-info-face ((,class (:foreground ,blue))))
-     (compilation-info ((,class (:foreground ,green :underline t))))
-     (compilation-leave-directory-face ((,class (:foreground ,green))))
-     (compilation-line-face ((,class (:foreground ,yellow))))
+     ;; Compilation (most faces politely inherit from 'success, 'error, 'warning etc.)
+     (compilation-column-number ((,class (:foreground ,yellow))))
      (compilation-line-number ((,class (:foreground ,yellow))))
      (compilation-message-face ((,class (:foreground ,blue))))
-     (compilation-warning-face ((,class (:foreground ,yellow :weight bold :underline t))))
 
      ;; Grep
      (grep-context-face ((,class (:foreground ,faint))))
@@ -376,8 +374,10 @@ names to which it refers are bound."
      (org-done ((,class (:foreground ,green))))
      (org-todo ((,class (:foreground ,red))))
      (org-special-keyword ((,class (:foreground ,orange))))
+     (org-table ((,class (:foreground ,violet))))
 
-     (org-document-title ((,class (:foreground ,cyan))))
+     (org-document-title ((,class (:foreground ,strong))))
+     (org-document-info ((,class (:foreground ,cyan))))
      (org-column ((,class (:background ,alt-background))))
      (org-warning ((,class (:weight bold :foreground ,red))))
 
