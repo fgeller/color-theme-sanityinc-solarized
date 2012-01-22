@@ -45,6 +45,7 @@
 
 ;;; Code:
 
+(require 'cl)
 
 (defmacro color-theme-sanityinc-solarized--with-colors (mode &rest body)
   "Execute `BODY' in a scope with variables bound to the various solarized colors.
@@ -73,13 +74,13 @@
      (when (eq 'light ,mode)
        (rotatef backgrounds contrast-backgrounds)
        (setq foregrounds (reverse foregrounds)))
-     (let ((background (first backgrounds))
-           (alt-background (second backgrounds))
-           (strong (first foregrounds))
-           (normal (second foregrounds))
-           (faint (third foregrounds))
-           (faintest (fourth foregrounds))
-           (contrast-background (second contrast-backgrounds))
+     (let ((background (nth 0 backgrounds))
+           (alt-background (nth 1 backgrounds))
+           (strong (nth 0 foregrounds))
+           (normal (nth 1 foregrounds))
+           (faint (nth 2 foregrounds))
+           (faintest (nth 3 foregrounds))
+           (contrast-background (nth 1 contrast-backgrounds))
            (class '((class color) (min-colors 89))))
        ,@body)))
 
@@ -519,10 +520,13 @@ are bound."
 (defun color-theme-sanityinc-solarized (mode)
   "Apply either the dark or the light theme."
   (if (fboundp 'load-theme)
-      (load-theme (cond
-                   ((eq 'light mode) 'sanityinc-solarized-light)
-                   ((eq 'dark mode) 'sanityinc-solarized-dark)
-                   (t (error "invalid mode: %s" mode))) t)
+      (let ((name (cond
+                    ((eq 'light mode) 'sanityinc-solarized-light)
+                    ((eq 'dark mode) 'sanityinc-solarized-dark)
+                    (t (error "invalid mode: %s" mode)))))
+        (if (> emacs-major-version 23)
+            (load-theme name t)
+          (load-theme name)))
     (progn
       (require 'color-theme)
       (color-theme-sanityinc-solarized--with-colors
