@@ -326,6 +326,7 @@ names to which it refers are bound."
      (diredp-exec-priv ((,class (:foreground ,blue :background nil))))
      (diredp-file-name ((,class (:foreground ,yellow))))
      (diredp-file-suffix ((,class (:foreground ,green))))
+     (diredp-compressed-file-suffix ((,class (:foreground ,yellow :background nil))))
      (diredp-flag-mark-line ((,class (:background nil :inherit highlight))))
      (diredp-ignored-file-name ((,class (:foreground ,faintest))))
      (diredp-link-priv ((,class (:background nil :foreground ,violet))))
