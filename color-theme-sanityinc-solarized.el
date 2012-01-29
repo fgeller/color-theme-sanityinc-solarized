@@ -119,7 +119,7 @@ names to which it refers are bound."
      (success ((,class (:foreground ,green))))
 
      ;; Flymake
-     (flymake-warnline ((,class (:foreground ,orange :background ,background :underline nil))))
+     (flymake-warnline ((,class (:foreground ,yellow :background ,background :underline nil))))
      (flymake-errline ((,class (:foreground ,red :background ,background :underline nil))))
 
      ;; anything
