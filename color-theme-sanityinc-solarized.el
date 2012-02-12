@@ -405,7 +405,7 @@ names to which it refers are bound."
      (hl-sexp-face ((,class (:background ,alt-background))))
      (highlight-80+ ((,class (:background ,alt-background))))
 
-     ;; Python-specific overrides
+     ;; python-mode overrides
      (py-builtins-face ((,class (:foreground ,violet :weight normal))))
 
      ;; js2-mode
