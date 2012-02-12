@@ -406,7 +406,7 @@ names to which it refers are bound."
      (highlight-80+ ((,class (:background ,alt-background))))
 
      ;; Python-specific overrides
-     (py-builtins-face ((,class (:foreground ,orange :weight normal))))
+     (py-builtins-face ((,class (:foreground ,violet :weight normal))))
 
      ;; js2-mode
      (js2-warning-face ((,class (:foreground ,orange))))
