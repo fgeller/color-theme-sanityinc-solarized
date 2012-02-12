@@ -190,6 +190,13 @@ names to which it refers are bound."
      (icicle-special-candidate ((,class (:foreground ,normal :background ,green))))
      (icicle-whitespace-highlight ((,class (:foreground ,normal :background ,red))))
 
+     ;; eshell
+     (eshell-prompt ((,class (:background nil :foreground ,blue :underline nil :weight normal))))
+     (eshell-ls-directory ((,class (:background nil :foreground ,blue :underline nil :weight normal))))
+     (eshell-ls-symlink ((,class (:background nil :foreground ,magenta :underline nil :weight normal))))
+     (eshell-ls-backup ((,class (:background nil :foreground ,faint :underline nil))))
+     (eshell-ls-archive ((,class (:background nil :foreground ,yellow :underline nil :weight normal))))
+
      ;; auto-complete
      (ac-candidate-face ((,class (:background ,alt-background :foreground ,normal :underline nil))))
      (ac-selection-face ((,class (:background ,blue :foreground ,background))))
