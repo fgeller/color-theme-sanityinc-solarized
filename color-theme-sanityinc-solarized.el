@@ -202,6 +202,12 @@ names to which it refers are bound."
      (ac-selection-face ((,class (:background ,blue :foreground ,background))))
      (ac-completion-face ((,class (:foreground ,faintest :underline nil))))
 
+     ;; company-mode
+     (company-tooltip ((,class (:background ,alt-background :foreground ,normal :underline nil))))
+     (company-tooltip-selection ((,class (:background ,contrast-background :foreground nil :underline nil))))
+     (company-tooltip-common ((,class (:background nil :foreground ,blue :underline nil))))
+     (company-tooltip-common-selection ((,class (:background nil :foreground ,orange :underline nil))))
+
      (popup-tip-face ((,class (:background ,alt-background :foreground ,normal))))
 
      ;; Clojure errors
