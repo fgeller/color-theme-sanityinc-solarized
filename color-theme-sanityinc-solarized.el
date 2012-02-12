@@ -204,9 +204,11 @@ names to which it refers are bound."
 
      ;; company-mode
      (company-tooltip ((,class (:background ,alt-background :foreground ,normal :underline nil))))
-     (company-tooltip-selection ((,class (:background ,contrast-background :foreground nil :underline nil))))
+     (company-tooltip-selection ((,class (:background ,alt-background :foreground nil :underline nil))))
      (company-tooltip-common ((,class (:background nil :foreground ,blue :underline nil))))
      (company-tooltip-common-selection ((,class (:background nil :foreground ,orange :underline nil))))
+     (company-preview ((,class (:background nil :foreground ,faintest :underline nil))))
+     (company-preview-common ((,class (:background nil :foreground ,orange :underline nil))))
 
      (popup-tip-face ((,class (:background ,alt-background :foreground ,normal))))
 
