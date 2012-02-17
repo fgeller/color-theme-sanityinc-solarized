@@ -521,7 +521,7 @@ names to which it refers are bound."
      (erc-input-face ((,class (:foreground ,green))))
      (erc-my-nick-face ((,class (:foreground ,green))))
      (erc-current-nick-face ((,class (:foreground ,green :weight normal))))
-     (erc-nick-default-face ((,class (:weight normal :foreground ,violet))))
+     (erc-nick-default-face ((,class (:weight normal :foreground ,blue))))
      (erc-nick-msg-face ((,class (:weight normal :foreground ,yellow))))
      (erc-notice-face ((,class (:foreground ,cyan :weight normal))))
      (erc-prompt-face ((,class (:foreground ,blue :background nil))))
