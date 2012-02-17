@@ -384,21 +384,27 @@ names to which it refers are bound."
      ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
      (outline-3 ((,class (:inherit nil :foreground ,green))))
 
-     (org-link ((,class (:foreground ,blue :underline t))))
      (org-date ((,class (:foreground ,blue :underline t))))
-     (org-agenda-structure ((,class (:foreground ,magenta))))
+     (org-agenda-structure ((,class (:foreground ,violet))))
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))
-     (org-done ((,class (:foreground ,green))))
-     (org-todo ((,class (:foreground ,red))))
-     (org-special-keyword ((,class (:foreground ,orange))))
-     (org-table ((,class (:foreground ,violet))))
-
-     (org-document-title ((,class (:foreground ,strong))))
-     (org-document-info ((,class (:foreground ,cyan))))
+     (org-agenda-dimmed-todo-face ((,class (:foreground ,faint))))
+     (org-block ((,class (:foreground ,orange))))
+     (org-code ((,class (:foreground ,yellow))))
      (org-column ((,class (:background ,alt-background))))
+     (org-document-info ((,class (:foreground ,cyan))))
+     (org-document-info-keyword ((,class (:foreground ,green))))
+     (org-document-title ((,class (:weight bold :foreground ,yellow :height 1.44))))
+     (org-done ((,class (:foreground ,green))))
+     (org-formula ((,class (:foreground ,orange))))
+     (org-link ((,class (:foreground ,blue :underline t))))
+     (org-scheduled ((,class (:foreground ,green))))
+     (org-scheduled-previously ((,class (:foreground ,yellow))))
+     (org-scheduled-today ((,class (:foreground ,green))))
+     (org-special-keyword ((,class (:foreground ,yellow))))
+     (org-table ((,class (:foreground ,violet))))
+     (org-todo ((,class (:foreground ,red))))
+     (org-upcoming-deadline ((,class (:foreground ,yellow))))
      (org-warning ((,class (:weight bold :foreground ,red))))
-
-     (org-scheduled-previously ((,class (:foreground ,orange))))
 
      (markdown-header-face ((,class (:inherit header-line))))
      (markdown-url-face ((,class (:inherit link))))
@@ -424,6 +430,19 @@ names to which it refers are bound."
      (js2-private-member-face ((,class (:foreground ,yellow))))
      (js2-private-function-call-face ((,class (:foreground ,orange))))
 
+
+     ;; js3-mode
+     (js3-warning-face ((,class (:underline ,yellow))))
+     (js3-error-face ((,class (:underline ,red))))
+     (js3-external-variable-face ((,class (:foreground ,magenta))))
+     (js3-function-param-face ((,class (:foreground ,blue))))
+     (js3-jsdoc-tag-face ((,class (:foreground ,magenta))))
+     (js3-jsdoc-type-face ((,class (:foreground ,cyan))))
+     (js3-jsdoc-value-face ((,class (:foreground ,violet))))
+     (js3-jsdoc-html-tag-name-face ((,class (:foreground ,blue))))
+     (js3-jsdoc-html-tag-delimiter-face ((,class (:foreground ,green))))
+     (js3-instance-member-face ((,class (:foreground ,blue))))
+     (js3-private-function-call-face ((,class (:foreground ,red))))
 
      ;; nxml
      (nxml-name-face ((,class (:foreground unspecified :inherit font-lock-constant-face))))
@@ -495,6 +514,17 @@ names to which it refers are bound."
      (gnus-group-mail-4-empty ((,class (:inherit gnus-group-mail-4 :foreground ,faint))))
      (gnus-group-mail-5-empty ((,class (:inherit gnus-group-mail-5 :foreground ,faint))))
      (gnus-group-mail-6-empty ((,class (:inherit gnus-group-mail-6 :foreground ,faint))))
+
+     (erc-direct-msg-face ((,class (:foreground ,yellow))))
+     (erc-error-face ((,class (:foreground ,red))))
+     (erc-header-face ((,class (:foreground ,strong :background ,alt-background))))
+     (erc-input-face ((,class (:foreground ,green))))
+     (erc-my-nick-face ((,class (:foreground ,green))))
+     (erc-nick-default-face ((,class (:weight normal :foreground ,violet))))
+     (erc-nick-msg-face ((,class (:weight normal :foreground ,yellow))))
+     (erc-notice-face ((,class (:foreground ,cyan))))
+     (erc-prompt-face ((,class (:foreground ,blue))))
+     (erc-timestamp-face ((,class (:foreground ,faint))))
 
      (custom-variable-tag ((,class (:foreground ,blue))))
      (custom-group-tag ((,class (:foreground ,blue))))
