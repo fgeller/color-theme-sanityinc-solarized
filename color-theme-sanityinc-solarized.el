@@ -520,11 +520,13 @@ names to which it refers are bound."
      (erc-header-face ((,class (:foreground ,strong :background ,alt-background))))
      (erc-input-face ((,class (:foreground ,green))))
      (erc-my-nick-face ((,class (:foreground ,green))))
+     (erc-current-nick-face ((,class (:foreground ,green :weight normal))))
      (erc-nick-default-face ((,class (:weight normal :foreground ,violet))))
      (erc-nick-msg-face ((,class (:weight normal :foreground ,yellow))))
-     (erc-notice-face ((,class (:foreground ,cyan))))
-     (erc-prompt-face ((,class (:foreground ,blue))))
-     (erc-timestamp-face ((,class (:foreground ,faint))))
+     (erc-notice-face ((,class (:foreground ,cyan :weight normal))))
+     (erc-prompt-face ((,class (:foreground ,blue :background nil))))
+     (erc-timestamp-face ((,class (:foreground ,faintest :weight normal))))
+
 
      (custom-variable-tag ((,class (:foreground ,blue))))
      (custom-group-tag ((,class (:foreground ,blue))))
