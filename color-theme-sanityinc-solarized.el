@@ -134,7 +134,7 @@ names to which it refers are bound."
      (anything-bookmarks-su-face ((,class (:foreground ,blue))))
      (anything-buffer-not-saved ((,class (:foreground ,blue))))
      (anything-buffer-saved-out ((,class (:foreground ,blue))))
-     (anything-candidate-number ((,class (:foreground ,blue))))
+     (anything-candidate-number ((,class (:foreground ,blue :background nil))))
      (anything-emms-playlist ((,class (:foreground ,blue))))
      (anything-ff-directory ((,class (:foreground ,blue))))
      (anything-ff-executable ((,class (:foreground ,blue))))
@@ -155,6 +155,7 @@ names to which it refers are bound."
      (anything-overlay-line-face ((,class (:foreground ,blue))))
      (anything-visible-mark ((,class (:foreground ,blue))))
      (anything-w3m-bookmarks-face ((,class (:foreground ,blue))))
+
 
      ;; icicles
      (icicle-Completions-instruction-1 ((,class (:foreground ,blue))))
