@@ -265,7 +265,7 @@ names to which it refers are bound."
      (border-glyph ((,class (nil))))
      (highlight ((,class (:inverse-video nil :background ,alt-background))))
      (gui-element ((,class (:background ,alt-background :foreground ,normal))))
-     (mode-line ((,class (:foreground nil :background ,alt-background :weight normal :box nil))))
+     (mode-line ((,class (:foreground ,faint :background ,alt-background :weight normal :box nil))))
      (mode-line-buffer-id ((,class (:foreground ,green :background nil :weight normal))))
      (mode-line-inactive ((,class (:inherit mode-line :foreground ,faintest :background ,alt-background :weight normal :box nil))))
      (mode-line-emphasis ((,class (:foreground ,strong))))
