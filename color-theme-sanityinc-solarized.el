@@ -519,6 +519,7 @@ names to which it refers are bound."
      (gnus-group-mail-5-empty ((,class (:inherit gnus-group-mail-5 :foreground ,faint))))
      (gnus-group-mail-6-empty ((,class (:inherit gnus-group-mail-6 :foreground ,faint))))
 
+     ;; erc
      (erc-direct-msg-face ((,class (:foreground ,yellow))))
      (erc-error-face ((,class (:foreground ,red))))
      (erc-header-face ((,class (:foreground ,strong :background ,alt-background))))
@@ -530,7 +531,6 @@ names to which it refers are bound."
      (erc-notice-face ((,class (:foreground ,cyan :weight normal))))
      (erc-prompt-face ((,class (:foreground ,blue :background nil))))
      (erc-timestamp-face ((,class (:foreground ,faintest :weight normal))))
-
 
      (custom-variable-tag ((,class (:foreground ,blue))))
      (custom-group-tag ((,class (:foreground ,blue))))
