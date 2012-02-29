@@ -197,6 +197,9 @@ names to which it refers are bound."
      (eshell-ls-symlink ((,class (:background nil :foreground ,magenta :underline nil :weight normal))))
      (eshell-ls-backup ((,class (:background nil :foreground ,faint :underline nil))))
      (eshell-ls-archive ((,class (:background nil :foreground ,yellow :underline nil :weight normal))))
+     (eshell-ls-special ((,class (:background nil :foreground ,magenta :underline nil :weight normal))))
+     (eshell-ls-executable ((,class (:background nil :foreground ,green :underline nil :weight normal))))
+     (eshell-ls-product ((,class (:background nil :foreground ,faintest :underline nil :weight normal))))
 
      ;; auto-complete
      (ac-candidate-face ((,class (:background ,alt-background :foreground ,normal :underline nil))))
