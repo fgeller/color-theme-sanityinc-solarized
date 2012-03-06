@@ -121,6 +121,9 @@ names to which it refers are bound."
      ;; Flymake
      (flymake-warnline ((,class (:foreground ,yellow :background ,background :underline nil))))
      (flymake-errline ((,class (:foreground ,red :background ,background :underline nil))))
+     ;; mark-multiple
+     (mm/mirror-face ((,class (:background ,contrast-background))))
+     (mm/master-face ((,class (:background ,contrast-background))))
 
      ;; anything
      (anything-M-x-key-face ((,class (:foreground ,blue))))
