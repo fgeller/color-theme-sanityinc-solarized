@@ -111,7 +111,7 @@ names to which it refers are bound."
      (font-lock-string-face ((,class (:foreground ,cyan))))
      (font-lock-type-face ((,class (:foreground ,yellow))))
      (font-lock-variable-name-face ((,class (:foreground ,yellow))))
-     (font-lock-warning-face ((,class (:foreground ,red))))
+     (font-lock-warning-face ((,class (:foreground ,orange))))
      (shadow ((,class (:foreground ,(fourth foregrounds)))))
      (success ((,class (:foreground ,green))))
      (error ((,class (:foreground ,red))))
