@@ -123,8 +123,8 @@ names to which it refers are bound."
      (flymake-errline ((,class (:foreground ,red :background nil :underline nil))))
 
      ;; mark-multiple
-     (mm/mirror-face ((,class (:background ,contrast-background))))
-     (mm/master-face ((,class (:background ,contrast-background))))
+     (mm/mirror-face ((,class (:background ,alt-background))))
+     (mm/master-face ((,class (:background ,alt-background))))
 
      ;; anything
      (anything-M-x-key-face ((,class (:foreground ,blue))))
