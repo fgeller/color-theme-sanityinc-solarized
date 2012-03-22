@@ -374,8 +374,8 @@ names to which it refers are bound."
      (magit-log-head-label-tags ((,class (:foreground ,cyan :box nil :weight bold))))
      (magit-section-title ((,class (:foreground ,blue :weight bold))))
 
-     (link ((,class (:foreground nil :underline t))))
-     (widget-button ((,class (:underline t))))
+     (link ((,class (:foreground nil :underline nil :weight bold))))
+     (widget-button ((,class (:underline nil))))
      (widget-field ((,class (:background ,alt-background :box (:line-width 1 :color ,normal)))))
 
      ;; Compilation (most faces politely inherit from 'success, 'error, 'warning etc.)
