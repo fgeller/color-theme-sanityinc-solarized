@@ -471,12 +471,25 @@ names to which it refers are bound."
 
      ;; Message-mode
      (message-header-other ((,class (:inherit header-line :foreground nil :background nil :weight normal))))
-     (message-header-subject ((,class (:inherit message-header-other :weight bold :foreground ,yellow))))
-     (message-header-to ((,class (:inherit message-header-other :weight bold :foreground ,orange))))
-     (message-header-cc ((,class (:inherit message-header-to :foreground nil))))
-     (message-header-name ((,class (:inherit header-line :foreground ,green :background nil))))
+     (message-header-subject ((,class (:inherit message-header-other :foreground ,blue :weight normal))))
+     (message-header-to ((,class (:inherit message-header-other :foreground ,cyan :weight normal))))
+     (message-header-cc ((,class (:inherit message-header-to :foreground nil :weight normal))))
+     (message-header-name ((,class (:inherit header-line :foreground ,faintest :background nil))))
      (message-header-newsgroups ((,class (:foreground ,cyan :background nil :slant normal))))
+     (message-header-xheader ((,class (:foreground nil))))
      (message-separator ((,class (:foreground ,magenta))))
+     (message-mml ((,class (:foreground ,faintest))))
+     (message-cited-text ((,class (:foreground ,faintest))))
+
+     ;; notmuch
+     (notmuch-crypto-signature-good-key ((,class (:background nil :foreground ,green))))
+     (notmuch-crypto-signature-good ((,class (:background nil :foreground ,green))))
+     (notmuch-crypto-signature-bad ((,class (:background nil :foreground ,red))))
+     (notmuch-crypto-signature-unknown ((,class (:background nil :foreground ,red))))
+     (notmuch-crypto-decryption ((,class (:background nil :foreground ,violet))))
+     (notmuch-crypto-part-header ((,class (:background nil :foreground ,faintest))))
+     (notmuch-message-summary-face ((,class (:background ,alt-background :foreground nil))))
+     (notmuch-tag-face ((,class (:foreground ,blue :weight normal))))
 
      ;; Gnus
      (gnus-cite-1 ((,class (:inherit outline-1 :foreground nil))))
