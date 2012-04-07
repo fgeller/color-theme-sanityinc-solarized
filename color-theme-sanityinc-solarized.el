@@ -160,6 +160,15 @@ names to which it refers are bound."
      (anything-visible-mark ((,class (:foreground ,blue))))
      (anything-w3m-bookmarks-face ((,class (:foreground ,blue))))
 
+     ;; bookmark+
+     (bmkp-heading ((,class (:foreground ,blue :background nil))))
+     (bmkp-X-mark ((,class (:foreground ,red :background nil))))
+     (bmkp-D-mark ((,class (:foreground ,red :background nil))))
+     (bmkp-*-mark ((,class (:foreground ,magenta :background nil))))
+     (bmkp-local-file-without-region ((,class (:foreground ,green :background nil))))
+     (bmkp-local-file-with-region ((,class (:foreground ,green :background nil))))
+     (bmkp-light-fringe-autonamed ((,class (:foreground ,blue :background nil))))
+     (bmkp-light-fringe-non-autonamed ((,class (:foreground ,yellow :background nil))))
 
      ;; icicles
      (icicle-Completions-instruction-1 ((,class (:foreground ,blue))))
