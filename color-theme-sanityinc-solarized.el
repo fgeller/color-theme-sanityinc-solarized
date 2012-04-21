@@ -410,9 +410,10 @@ names to which it refers are bound."
      ;; Stop outline-3 from inheriting font-lock-keyword-face, which we've made bold
      (outline-3 ((,class (:inherit nil :foreground ,green))))
 
-     (org-date ((,class (:foreground ,blue :underline t))))
+     (org-date ((,class (:foreground ,blue :underline nil))))
      (org-agenda-structure ((,class (:foreground ,violet))))
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))
+     (org-agenda-date-today ((,class (:foreground ,blue :underline nil :weight normal))))
      (org-agenda-date-weekend ((,class (:foreground ,cyan :underline nil))))
      (org-agenda-dimmed-todo-face ((,class (:foreground ,faint))))
      (org-agenda-done ((,class (:foreground ,green))))
@@ -424,7 +425,7 @@ names to which it refers are bound."
      (org-document-title ((,class (:weight bold :foreground ,yellow :height 1.44))))
      (org-done ((,class (:weight normal :foreground ,green))))
      (org-formula ((,class (:foreground ,orange))))
-     (org-link ((,class (:foreground ,blue :underline t))))
+     (org-link ((,class (:foreground ,blue :underline nil))))
      (org-scheduled ((,class (:foreground ,green))))
      (org-scheduled-previously ((,class (:foreground ,yellow))))
      (org-scheduled-today ((,class (:foreground ,green))))
