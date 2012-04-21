@@ -157,8 +157,17 @@ names to which it refers are bound."
      (anything-lisp-completion-info ((,class (:foreground ,blue))))
      (anything-lisp-show-completion ((,class (:foreground ,blue))))
      (anything-overlay-line-face ((,class (:foreground ,blue))))
-     (anything-visible-mark ((,class (:foreground ,blue))))
      (anything-w3m-bookmarks-face ((,class (:foreground ,blue))))
+     (anything-visible-mark ((,class (:foreground ,blue))))
+
+     ;; helm
+     (helm-selection ((,class (:foreground ,blue :background ,alt-background :underline nil))))
+     (helm-candidate-number ((,class (:foreground ,blue :background nil :underline nil))))
+     (helm-source-header ((,class (:foreground ,blue :background nil :underline t))))
+     (helm-visible-mark ((,class (:foreground ,red :background nil :underline nil))))
+     (helm-ff-directory ((,class (:foreground ,yellow :background nil :underline nil))))
+     (helm-ff-executable ((,class (:foreground ,green :background nil :underline nil))))
+     (helm-ff-symlink ((,class (:foreground ,magenta :background nil :underline nil))))
 
      ;; bookmark+
      (bmkp-heading ((,class (:foreground ,blue :background nil))))
