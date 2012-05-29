@@ -271,8 +271,8 @@ names to which it refers are bound."
 
      ;; Search
      (match ((,class (:foreground ,blue :background ,background :inverse-video t))))
-     (isearch ((,class (:foreground ,yellow :background ,background :inverse-video t))))
-     (isearch-lazy-highlight-face ((,class (:foreground ,cyan :background ,background :inverse-video t))))
+     (isearch ((,class (:foreground ,blue :background ,background :inverse-video nil))))
+     (isearch-lazy-highlight-face ((,class (:foreground ,blue :background nil :weight bold :inverse-video nil))))
      (isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
 
      ;; IDO
