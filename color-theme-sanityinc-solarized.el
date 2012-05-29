@@ -434,6 +434,11 @@ names to which it refers are bound."
      (org-todo ((,class (:weight normal :foreground ,red))))
      (org-upcoming-deadline ((,class (:foreground ,yellow))))
      (org-warning ((,class (:weight normal :foreground ,red))))
+     (org-habit-ready-face ((,class (:background nil :foreground ,cyan))))
+     (org-habit-ready-future-face ((,class (:background nil :foreground ,alt-background))))
+     (org-habit-ready-future-face ((,class (:background nil :foreground ,alt-background))))
+     (org-habit-alert-future-face ((,class (:background nil :foreground ,red))))
+     (org-habit-overdue-future-face ((,class (:background nil :foreground ,red))))
 
      (markdown-header-face ((,class (:inherit header-line))))
      (markdown-url-face ((,class (:inherit link))))
