@@ -399,7 +399,7 @@ names to which it refers are bound."
      ;; Compilation (most faces politely inherit from 'success, 'error, 'warning etc.)
      (compilation-column-number ((,class (:foreground ,yellow))))
      (compilation-line-number ((,class (:foreground ,yellow))))
-     (compilation-message-face ((,class (:foreground ,blue))))
+     (compilation-message-face ((,class (:foreground ,blue :underline nil))))
 
      ;; Grep
      (grep-context-face ((,class (:foreground ,faint))))
