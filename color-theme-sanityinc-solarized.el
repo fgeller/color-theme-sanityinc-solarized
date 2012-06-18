@@ -451,9 +451,9 @@ names to which it refers are bound."
      (py-builtins-face ((,class (:foreground ,violet :weight normal))))
 
      ;; js2-mode
-     (js2-warning-face ((,class (:foreground ,orange))))
+     (js2-warning-face ((,class (:foreground ,orange :underline nil))))
      (js2-error-face ((,class (:foreground ,red))))
-     (js2-external-variable-face ((,class (:foreground ,magenta))))
+     (js2-external-variable-face ((,class (:foreground ,violet))))
      (js2-function-param-face ((,class (:foreground ,green))))
      (js2-instance-member-face ((,class (:foreground ,violet))))
      (js2-jsdoc-html-tag-delimiter-face ((,class (:foreground ,faintest))))
@@ -463,7 +463,6 @@ names to which it refers are bound."
      (js2-jsdoc-value-face ((,class (:foreground ,yellow))))
      (js2-private-member-face ((,class (:foreground ,yellow))))
      (js2-private-function-call-face ((,class (:foreground ,orange))))
-
 
      ;; js3-mode
      (js3-warning-face ((,class (:underline ,yellow))))
