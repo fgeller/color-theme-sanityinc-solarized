@@ -310,13 +310,13 @@ names to which it refers are bound."
      (whitespace-trailing ((t (:background ,red :foreground ,faintest))))
 
      ;; Parenthesis matching (built-in)
-     (show-paren-match ((,class (:background nil :foreground nil :inverse-video t))))
-     (show-paren-mismatch ((,class (:background ,magenta :foreground ,background))))
+     (show-paren-match ((,class (:background ,contrast-background))))
+     (show-paren-mismatch ((,class (:background ,magenta))))
 
      ;; Parenthesis matching (mic-paren)
-     (paren-face-match ((,class (:foreground nil :background nil :inherit show-paren-match))))
-     (paren-face-mismatch ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
-     (paren-face-no-match ((,class (:foreground nil :background nil :inherit show-paren-mismatch))))
+     (paren-face-match ((,class (:inherit show-paren-match))))
+     (paren-face-mismatch ((,class (:inherit show-paren-mismatch))))
+     (paren-face-no-match ((,class (:inherit show-paren-mismatch))))
 
      ;; Parenthesis dimming (parenface)
      (paren-face ((,class (:foreground ,faintest :background nil))))
