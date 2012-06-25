@@ -434,6 +434,7 @@ names to which it refers are bound."
      (org-todo ((,class (:weight normal :foreground ,red))))
      (org-upcoming-deadline ((,class (:foreground ,yellow))))
      (org-warning ((,class (:weight normal :foreground ,red))))
+     (org-hide ((,class (:foreground ,background))))
      (org-habit-ready-face ((,class (:background nil :foreground ,cyan))))
      (org-habit-ready-future-face ((,class (:background nil :foreground ,alt-background))))
      (org-habit-ready-future-face ((,class (:background nil :foreground ,alt-background))))
