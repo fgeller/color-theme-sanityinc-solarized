@@ -440,6 +440,7 @@ names to which it refers are bound."
      (org-habit-ready-future-face ((,class (:background nil :foreground ,alt-background))))
      (org-habit-alert-future-face ((,class (:background nil :foreground ,orange))))
      (org-habit-alert-face ((,class (:background nil :foreground ,red))))
+     (org-habit-overdue-face ((,class (:background nil :foreground ,red))))
      (org-habit-overdue-future-face ((,class (:background nil :foreground ,red))))
 
      (markdown-header-face ((,class (:inherit header-line))))
