@@ -378,6 +378,8 @@ names to which it refers are bound."
      (diredp-read-priv ((,class (:foreground ,green :background nil))))
      (diredp-symlink ((,class (:foreground ,violet))))
      (diredp-write-priv ((,class (:foreground ,yellow :background nil))))
+     (diredp-deletion ((,class (:foreground ,red :background nil))))
+     (diredp-deletion-file-name ((,class (:foreground ,red :background nil))))
 
      ;; Magit (a patch is pending in magit to make these standard upstream)
      (magit-branch ((,class (:foreground ,green))))
