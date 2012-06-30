@@ -296,7 +296,7 @@ names to which it refers are bound."
      (region ((,class (:background ,contrast-background))))
      (secondary-selection ((,class (:background ,alt-background))))
 
-     (header-line ((,class (:background nil :foreground ,strong :inherit nil))))
+     (header-line ((,class (:background ,alt-background :foreground nil :inherit nil))))
      (trailing-whitespace ((,class (:background ,red :underline nil))))
 
      ;; Whitespace mode
