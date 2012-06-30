@@ -168,6 +168,7 @@ names to which it refers are bound."
      (helm-ff-directory ((,class (:foreground ,yellow :background nil :underline nil))))
      (helm-ff-executable ((,class (:foreground ,green :background nil :underline nil))))
      (helm-ff-symlink ((,class (:foreground ,magenta :background nil :underline nil))))
+     (helm-ff-prefix ((,class (:foreground ,red :background nil :underline nil))))
 
      ;; bookmark+
      (bmkp-heading ((,class (:foreground ,blue :background nil))))
