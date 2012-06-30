@@ -115,7 +115,7 @@ names to which it refers are bound."
      (shadow ((,class (:foreground ,(fourth foregrounds)))))
      (success ((,class (:foreground ,green))))
      (error ((,class (:foreground ,red))))
-     (warning ((,class (:foreground ,orange))))
+     (warning ((,class (:foreground ,orange :weight normal))))
      (success ((,class (:foreground ,green))))
 
      ;; Flymake
