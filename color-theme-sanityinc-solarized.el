@@ -122,6 +122,10 @@ names to which it refers are bound."
      (flymake-warnline ((,class (:foreground ,yellow :background nil :underline nil))))
      (flymake-errline ((,class (:foreground ,red :background nil :underline nil))))
 
+     ;; Flyspell
+     (flyspell-duplicate ((,class (:foreground ,yellow :background nil :underline nil :weight normal))))
+     (flyspell-incorrect ((,class (:foreground ,red :background nil :underline nil :weight normal))))
+
      ;; mark-multiple
      (mm/mirror-face ((,class (:background ,alt-background))))
      (mm/master-face ((,class (:background ,alt-background))))
