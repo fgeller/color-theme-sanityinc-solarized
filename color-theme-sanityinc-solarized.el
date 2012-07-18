@@ -174,6 +174,10 @@ names to which it refers are bound."
      (helm-ff-symlink ((,class (:foreground ,magenta :background nil :underline nil))))
      (helm-ff-prefix ((,class (:foreground ,red :background nil :underline nil))))
      (helm-M-x-key ((,class (:foreground ,green :underline nil))))
+     (helm-grep-file ((,class (:foreground ,green :underline nil))))
+     (helm-grep-lineno ((,class (:foreground ,yellow :underline nil))))
+     (helm-grep-running ((,class (:foreground ,red :underline nil))))
+     (helm-grep-finish ((,class (:foreground ,green :underline nil))))
 
      ;; bookmark+
      (bmkp-heading ((,class (:foreground ,blue :background nil))))
