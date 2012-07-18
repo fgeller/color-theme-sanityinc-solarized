@@ -173,6 +173,7 @@ names to which it refers are bound."
      (helm-ff-executable ((,class (:foreground ,green :background nil :underline nil))))
      (helm-ff-symlink ((,class (:foreground ,magenta :background nil :underline nil))))
      (helm-ff-prefix ((,class (:foreground ,red :background nil :underline nil))))
+     (helm-M-x-key ((,class (:foreground ,green :underline nil))))
 
      ;; bookmark+
      (bmkp-heading ((,class (:foreground ,blue :background nil))))
