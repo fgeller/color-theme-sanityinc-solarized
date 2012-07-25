@@ -412,6 +412,7 @@ names to which it refers are bound."
      (compilation-column-number ((,class (:foreground ,yellow))))
      (compilation-line-number ((,class (:foreground ,yellow))))
      (compilation-message-face ((,class (:foreground ,blue :underline nil))))
+     (compilation-error ((,class (:foreground ,red :weight normal))))
 
      ;; Grep
      (grep-context-face ((,class (:foreground ,faint))))
