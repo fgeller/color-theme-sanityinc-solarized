@@ -165,6 +165,7 @@ names to which it refers are bound."
      (anything-visible-mark ((,class (:foreground ,blue))))
 
      ;; helm
+     (helm-action ((,class (:underline nil))))
      (helm-selection ((,class (:foreground ,blue :background ,alt-background :underline nil))))
      (helm-candidate-number ((,class (:foreground ,blue :background nil :underline nil))))
      (helm-source-header ((,class (:foreground ,blue :background nil :underline t))))
@@ -178,6 +179,7 @@ names to which it refers are bound."
      (helm-grep-lineno ((,class (:foreground ,yellow :underline nil))))
      (helm-grep-running ((,class (:foreground ,red :underline nil))))
      (helm-grep-finish ((,class (:foreground ,green :underline nil))))
+     (helm-buffer-saved-out ((,class (:foreground ,orange :underline nil :background nil))))
 
      ;; bookmark+
      (bmkp-heading ((,class (:foreground ,blue :background nil))))
