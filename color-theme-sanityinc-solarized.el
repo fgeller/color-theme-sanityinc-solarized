@@ -202,9 +202,9 @@ names to which it refers are bound."
      (eshell-ls-product ((,class (:background nil :foreground ,faintest :underline nil :weight normal))))
 
      ;; auto-complete
-     (ac-candidate-face ((,class (:family "Menlo" :height 150 :background ,alt-background :foreground ,normal :underline nil))))
-     (ac-selection-face ((,class (:family "Menlo" :height 150 :background ,blue :foreground ,background))))
-     (ac-completion-face ((,class (:family "Menlo" :height 150 :foreground ,faintest :underline nil))))
+     (ac-candidate-face ((,class (:background ,alt-background :foreground ,normal :underline nil))))
+     (ac-selection-face ((,class (:background ,blue :foreground ,background))))
+     (ac-completion-face ((,class (:foreground ,faintest :underline nil))))
 
      ;; company-mode
      (company-tooltip ((,class (:background ,alt-background :foreground ,normal :underline nil))))
