@@ -358,6 +358,7 @@ names to which it refers are bound."
      (diredp-write-priv ((,class (:foreground ,yellow :background nil))))
      (diredp-deletion ((,class (:foreground ,red :background nil))))
      (diredp-deletion-file-name ((,class (:foreground ,red :background nil))))
+     (diredp-date-time ((,class (:foreground ,cyan :background nil))))
 
      ;; Magit (a patch is pending in magit to make these standard upstream)
      (magit-branch ((,class (:foreground ,green))))
