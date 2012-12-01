@@ -405,7 +405,7 @@ names to which it refers are bound."
      (org-column ((,class (:background ,alt-background))))
      (org-document-info ((,class (:foreground ,cyan))))
      (org-document-info-keyword ((,class (:foreground ,green))))
-     (org-document-title ((,class (:weight bold :foreground ,yellow :height 1.44))))
+     (org-document-title ((,class (:weight bold :foreground ,yellow :height 1.0))))
      (org-done ((,class (:weight normal :foreground ,green))))
      (org-formula ((,class (:foreground ,orange))))
      (org-link ((,class (:foreground ,blue :underline nil))))
