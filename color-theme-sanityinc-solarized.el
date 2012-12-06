@@ -134,7 +134,7 @@ names to which it refers are bound."
      (helm-action ((,class (:underline nil))))
      (helm-selection ((,class (:foreground ,blue :background ,alt-background :underline nil))))
      (helm-candidate-number ((,class (:foreground ,blue :background nil :underline nil))))
-     (helm-source-header ((,class (:foreground ,blue :background nil :underline t :height 1.0 :weight normal))))
+     (helm-source-header ((,class (:foreground ,blue :background nil :underline t :height 1.0 :weight normal :family "Consolas"))))
      (helm-visible-mark ((,class (:foreground ,red :background nil :underline nil))))
      (helm-ff-directory ((,class (:foreground ,yellow :background nil :underline nil))))
      (helm-ff-executable ((,class (:foreground ,green :background nil :underline nil))))
