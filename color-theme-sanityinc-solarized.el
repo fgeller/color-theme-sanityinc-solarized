@@ -408,6 +408,7 @@ names to which it refers are bound."
      (org-document-title ((,class (:weight bold :foreground ,yellow :height 1.0))))
      (org-done ((,class (:weight normal :foreground ,green))))
      (org-formula ((,class (:foreground ,orange))))
+     (org-footnote ((,class (:foreground ,blue :underline nil))))
      (org-link ((,class (:foreground ,blue :underline nil))))
      (org-scheduled ((,class (:foreground ,green))))
      (org-scheduled-previously ((,class (:foreground ,yellow))))
