@@ -312,12 +312,15 @@ names to which it refers are bound."
      (slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
      ;; diff
-     (diff-added ((,class (:foreground ,green))))
-     (diff-changed ((,class (:foreground ,violet))))
-     (diff-removed ((,class (:foreground ,orange))))
+     (diff-added ((,class (:foreground ,green :background nil))))
+     (diff-changed ((,class (:foreground ,violet :background nil))))
+     (diff-removed ((,class (:foreground ,orange :background nil))))
      (diff-header ((,class (:foreground ,cyan :background nil))))
      (diff-file-header ((,class (:foreground ,blue :background nil))))
-     (diff-hunk-header ((,class (:foreground ,magenta))))
+     (diff-hunk-header ((,class (:foreground ,blue))))
+     (diff-refine-change ((,class (:weight bold :background nil))))
+     (diff-refine-removed ((,class (:foreground ,red :background nil))))
+     (diff-refine-added ((,class (:foreground ,green :background nil))))
 
      ;; ediff
      (ediff-current-diff-A ((,class (:foreground nil :background ,alt-background))))
