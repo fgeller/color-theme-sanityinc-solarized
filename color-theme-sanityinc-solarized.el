@@ -368,7 +368,7 @@ names to which it refers are bound."
      (diredp-date-time ((,class (:foreground ,cyan :background nil))))
 
      ;; Magit (a patch is pending in magit to make these standard upstream)
-     (magit-branch ((,class (:foreground ,green))))
+     (magit-branch ((,class (:foreground ,green :weight normal))))
      (magit-item-highlight ((,class (:inherit highlight :background nil))))
      (magit-log-graph ((,class (:foreground ,faintest))))
      (magit-log-sha1 ((,class (:foreground ,yellow))))
