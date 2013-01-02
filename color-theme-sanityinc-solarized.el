@@ -378,7 +378,8 @@ names to which it refers are bound."
      (magit-log-head-label-local ((,class (:foreground ,magenta :box nil :weight bold))))
      (magit-log-head-label-remote ((,class (:foreground ,violet :box nil :weight bold))))
      (magit-log-head-label-tags ((,class (:foreground ,cyan :box nil :weight bold))))
-     (magit-section-title ((,class (:foreground ,blue :weight bold))))
+     (magit-header ((,class (:inherit nil :foreground ,blue :background nil :weight bold))))
+     (magit-section-title ((,class (:foreground ,blue :background nil :weight bold))))
 
      (link ((,class (:foreground nil :underline nil :weight normal :slant italic))))
      (widget-button ((,class (:underline nil))))
