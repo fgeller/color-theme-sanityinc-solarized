@@ -134,6 +134,9 @@ names to which it refers are bound."
      (mm/mirror-face ((,class (:background ,alt-background))))
      (mm/master-face ((,class (:background ,alt-background))))
 
+     ;; fic-mode
+     (fic-face ((,class (:background nil :foreground ,magenta :weight normal))))
+
      ;; helm
      (helm-action ((,class (:underline nil))))
      (helm-selection ((,class (:foreground ,blue :background ,alt-background :underline nil))))
