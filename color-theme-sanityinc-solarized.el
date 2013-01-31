@@ -314,6 +314,11 @@ names to which it refers are bound."
      (slime-repl-result-face ((,class (:foreground ,green))))
      (slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
+     ;; diff-hl
+     (diff-hl-insert ((,class (:foreground ,green :background ,green))))
+     (diff-hl-delete ((,class (:foreground ,red :background ,red))))
+     (diff-hl-change ((,class (:foreground ,blue :background ,blue))))
+
      ;; diff
      (diff-added ((,class (:foreground ,green :background nil))))
      (diff-changed ((,class (:foreground ,violet :background nil))))
