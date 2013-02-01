@@ -267,7 +267,7 @@ names to which it refers are bound."
 
      ;; Emacs interface
      (cursor ((,class (:background ,blue))))
-     (fringe ((,class (:background ,alt-background))))
+     (fringe ((,class (:background ,background))))
      (border ((,class (:background ,alt-background))))
      (border-glyph ((,class (nil))))
      (highlight ((,class (:inverse-video nil :background ,alt-background))))
