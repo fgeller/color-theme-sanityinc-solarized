@@ -153,6 +153,7 @@ names to which it refers are bound."
      (helm-grep-running ((,class (:foreground ,red :underline nil))))
      (helm-grep-finish ((,class (:foreground ,green :underline nil))))
      (helm-buffer-saved-out ((,class (:foreground ,orange :underline nil :background nil))))
+     (helm-moccur-buffer ((,class (:foreground ,green :underline nil))))
 
      ;; bookmark+
      (bmkp-heading ((,class (:foreground ,blue :background nil))))
