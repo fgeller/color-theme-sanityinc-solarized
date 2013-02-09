@@ -268,14 +268,14 @@ names to which it refers are bound."
 
      ;; Emacs interface
      (cursor ((,class (:background ,blue))))
-     (fringe ((,class (:background ,background))))
-     (border ((,class (:background ,alt-background))))
+     (fringe ((,class (:foreground ,alt-background :background ,background))))
+     (border ((,class (:foreground ,alt-background :background ,alt-background))))
      (border-glyph ((,class (nil))))
      (highlight ((,class (:inverse-video nil :background ,alt-background))))
      (gui-element ((,class (:background ,alt-background :foreground ,normal))))
-     (mode-line ((,class (:foreground ,faintest :background ,normal :weight normal :box nil))))
-     (mode-line-buffer-id ((,class (:foreground ,base2 :background nil :weight normal))))
-     (mode-line-inactive ((,class (:inherit mode-line :foreground ,faintest :background ,normal :weight normal :box nil))))
+     (mode-line ((,class (:foreground ,faintest :background ,background :weight normal :box (:line-width 1 :color ,alt-background)))))
+     (mode-line-buffer-id ((,class (:foreground ,green :background nil :weight normal))))
+     (mode-line-inactive ((,class (:inherit mode-line :foreground nil :background ,nil :weight normal :box (:line-width 1 :color ,alt-background)))))
      (mode-line-emphasis ((,class (:foreground ,strong))))
      (mode-line-highlight ((,class (:foreground ,magenta :box nil :weight bold))))
      (minibuffer-prompt ((,class (:foreground ,blue))))
@@ -594,7 +594,7 @@ are bound."
   (quote
    `(((background-color . ,background)
       (background-mode . light)
-      (border-color . ,normal)
+      (border-color . ,alt-background)
       (cursor-color . ,magenta)
       (foreground-color . ,normal)
       (mouse-color . ,cyan)))))
