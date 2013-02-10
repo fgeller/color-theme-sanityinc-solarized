@@ -155,6 +155,27 @@ names to which it refers are bound."
      (helm-buffer-saved-out ((,class (:foreground ,orange :underline nil :background nil))))
      (helm-moccur-buffer ((,class (:foreground ,green :underline nil))))
 
+     ;; calfw
+
+     (cfw:face-title ((,class (:foreground ,strong :weight bold :height 1.0))))
+     (cfw:face-header ((,class (:foreground ,normal :background nil :weight normal))))
+     (cfw:face-sunday ((,class :foreground ,strong :background nil :weight bold)))
+     (cfw:face-saturday ((,class :foreground ,strong :background nil :weight bold)))
+     (cfw:face-holiday ((,class :background nil :foreground ,magenta :weight normal)))
+     (cfw:face-grid ((,class :foreground ,alt-background :background ,alt-background)))
+     (cfw:face-default-content ((,class :foreground ,red)))
+     (cfw:face-periods ((,class :foreground ,red)))
+     (cfw:face-day-title ((,class :background ,background)))
+     (cfw:face-default-day ((,class :weight bold :inherit cfw:face-day-title)))
+     (cfw:face-annotation ((,class :foreground ,red :inherit cfw:face-day-title)))
+     (cfw:face-disable ((,class :foreground ,faintest :inherit cfw:face-day-title)))
+     (cfw:face-today-title ((,class :background ,faintest :weight normal)))
+     (cfw:face-today ((,class :background: ,faintest :weight normal)))
+     (cfw:face-select ((,class :background ,contrast-background)))
+     (cfw:face-toolbar ((,class :foreground ,normal :background ,background)))
+     (cfw:face-toolbar-button-on ((,class :foreground ,strong :background ,background :weight normal)))
+     (cfw:face-toolbar-button-off ((,class :foreground ,faintest :background ,background :weight normal)))
+
      ;; bookmark+
      (bmkp-heading ((,class (:foreground ,blue :background nil))))
      (bmkp-X-mark ((,class (:foreground ,red :background nil))))
