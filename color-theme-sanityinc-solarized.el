@@ -409,8 +409,8 @@ names to which it refers are bound."
      (magit-log-head-label-local ((,class (:foreground ,magenta :background nil :box nil :weight normal))))
      (magit-log-head-label-remote ((,class (:foreground ,violet :background nil :box nil :weight normal))))
      (magit-log-head-label-tags ((,class (:foreground ,cyan :background nil :box nil :weight normal))))
-     (magit-header ((,class (:inherit nil :foreground ,blue :background nil :weight bold))))
-     (magit-section-title ((,class (:foreground ,blue :background nil :weight bold))))
+     (magit-header ((,class (:inherit nil :foreground ,blue :background nil :weight normal))))
+     (magit-section-title ((,class (:foreground ,blue :background nil :weight normal))))
 
      (link ((,class (:foreground nil :underline nil :weight normal :slant italic))))
      (widget-button ((,class (:underline nil))))
