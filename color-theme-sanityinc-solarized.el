@@ -554,11 +554,11 @@ names to which it refers are bound."
      (gnus-cite-7 ((,class (:inherit outline-7 :foreground nil))))
      (gnus-cite-8 ((,class (:inherit outline-8 :foreground nil))))
      ;; there are several more -cite- faces...
-     (gnus-header-content ((,class (:inherit header-line :foreground nil :background nil :weight normal))))
+     (gnus-header-content ((,class (:inherit header-line :foreground nil :background ,background :weight normal))))
      (gnus-header-subject ((,class (:inherit gnus-header-content :weight bold :foreground ,yellow))))
      (gnus-header-from ((,class (:inherit gnus-header-content :weight bold :foreground ,orange))))
-     (gnus-header-name ((,class (:inherit header-line :foreground ,green :background nil))))
-     (gnus-button ((,class (:inherit link :foreground nil))))
+     (gnus-header-name ((,class (:inherit header-line :foreground ,green :background ,background))))
+     (gnus-button ((,class (:inherit link :foreground nil :background ,background))))
      (gnus-signature ((,class (:inherit font-lock-comment-face))))
 
      (gnus-summary-normal-unread ((,class (:foreground ,strong :weight normal))))
