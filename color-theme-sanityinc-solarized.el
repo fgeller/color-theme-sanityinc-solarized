@@ -336,6 +336,8 @@ names to which it refers are bound."
      (slime-repl-result-face ((,class (:foreground ,green))))
      (slime-repl-output-face ((,class (:foreground ,blue :background ,background))))
 
+     (hl-line ((,class (:background ,background :underline t :overline nil))))
+
      ;; diff-hl
      (diff-hl-insert ((,class (:foreground ,green :background ,green))))
      (diff-hl-delete ((,class (:foreground ,red :background ,red))))
