@@ -440,7 +440,7 @@ names to which it refers are bound."
      (org-agenda-structure ((,class (:foreground ,violet))))
      (org-agenda-date ((,class (:foreground ,blue :underline nil))))
      (org-time-grid ((,class (:foreground ,faintest :underline nil))))
-     (org-agenda-date-today ((,class (:foreground ,blue :underline nil :weight normal))))
+     (org-agenda-date-today ((,class (:foreground ,blue :underline nil :weight normal :slant normal))))
      (org-agenda-date-weekend ((,class (:foreground ,cyan :underline nil))))
      (org-agenda-dimmed-todo-face ((,class (:foreground ,faint))))
      (org-agenda-done ((,class (:foreground ,green))))
