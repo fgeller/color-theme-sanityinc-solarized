@@ -300,7 +300,7 @@ names to which it refers are bound."
      (mode-line-emphasis ((,class (:foreground ,strong))))
      (mode-line-highlight ((,class (:foreground ,magenta :box nil :weight bold))))
      (minibuffer-prompt ((,class (:foreground ,blue))))
-     (region ((,class (:background ,alt-background))))
+     (region ((,class (:inverse-video t))))
      (secondary-selection ((,class (:background ,alt-background))))
 
      (header-line ((,class (:background ,alt-background :foreground nil :inherit nil))))
@@ -317,7 +317,7 @@ names to which it refers are bound."
      (whitespace-trailing ((t (:background ,red :foreground ,faintest))))
 
      ;; Parenthesis matching (built-in)
-     (show-paren-match ((,class (:background nil :inverse-video t))))
+     (show-paren-match ((,class (:background ,alt-background :inverse-video nil))))
      (show-paren-mismatch ((,class (:background ,magenta))))
 
      ;; Parenthesis matching (mic-paren)
