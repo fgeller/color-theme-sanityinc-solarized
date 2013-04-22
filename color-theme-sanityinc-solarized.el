@@ -565,6 +565,7 @@ names to which it refers are bound."
      (gnus-button ((,class (:inherit link :foreground nil :background ,background))))
      (gnus-signature ((,class (:inherit font-lock-comment-face))))
 
+     (gnus-summary-selected ((,class (:background ,alt-background :underline nil))))
      (gnus-summary-normal-unread ((,class (:foreground ,strong :weight normal))))
      (gnus-summary-normal-read ((,class (:foreground ,normal :weight normal))))
      (gnus-summary-normal-ancient ((,class (:foreground ,cyan :weight normal))))
