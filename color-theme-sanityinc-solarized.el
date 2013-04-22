@@ -527,12 +527,12 @@ names to which it refers are bound."
      (erb-comment-delim-face ((,class (:background ,alt-background))))
 
      ;; Message-mode
-     (message-header-other ((,class (:inherit header-line :foreground nil :background nil :weight normal))))
+     (message-header-other ((,class (:inherit header-line :foreground nil :background ,background :weight normal))))
      (message-header-subject ((,class (:inherit message-header-other :foreground ,blue :weight normal))))
      (message-header-to ((,class (:inherit message-header-other :foreground ,cyan :weight normal))))
      (message-header-cc ((,class (:inherit message-header-to :foreground nil :weight normal))))
-     (message-header-name ((,class (:inherit header-line :foreground ,faintest :background nil))))
-     (message-header-newsgroups ((,class (:foreground ,cyan :background nil :slant normal))))
+     (message-header-name ((,class (:inherit header-line :foreground ,faintest :background ,background))))
+     (message-header-newsgroups ((,class (:foreground ,cyan :background ,background :slant normal))))
      (message-header-xheader ((,class (:foreground nil))))
      (message-separator ((,class (:foreground ,magenta))))
      (message-mml ((,class (:foreground ,faintest))))
