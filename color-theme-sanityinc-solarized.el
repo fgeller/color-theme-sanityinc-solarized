@@ -317,7 +317,7 @@ names to which it refers are bound."
      (whitespace-trailing ((t (:background ,red :foreground ,faintest))))
 
      ;; Parenthesis matching (built-in)
-     (show-paren-match ((,class (:background ,alt-background :inverse-video nil))))
+     (show-paren-match ((,class (:background ,base3 :inverse-video t))))
      (show-paren-mismatch ((,class (:background ,magenta))))
 
      ;; Parenthesis matching (mic-paren)
