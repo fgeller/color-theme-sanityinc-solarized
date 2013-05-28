@@ -277,9 +277,9 @@ names to which it refers are bound."
      (mmm-output-submode-face ((,class (:background ,alt-background))))
 
      ;; Search
-     (match ((,class (:foreground ,blue :background ,background :inverse-video t))))
-     (isearch ((,class (:foreground ,nil :background ,alt-background :inverse-video t))))
-     (isearch-lazy-highlight-face ((,class (:foreground ,nil :background nil :weight bold :inverse-video t))))
+     (match ((,class (:foreground ,background :background ,blue :inverse-video nil))))
+     (isearch ((,class (:foreground ,background :background ,magenta :inverse-video nil))))
+     (isearch-lazy-highlight-face ((,class (:foreground ,background :background ,blue :inverse-video nil))))
      (isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
 
      ;; IDO
