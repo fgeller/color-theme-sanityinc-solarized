@@ -281,6 +281,7 @@ names to which it refers are bound."
      (isearch ((,class (:foreground ,background :background ,magenta :inverse-video nil))))
      (isearch-lazy-highlight-face ((,class (:foreground ,background :background ,blue :inverse-video nil))))
      (isearch-fail ((,class (:background ,background :inherit font-lock-warning-face :inverse-video t))))
+     (anzu-mode-line ((,class (:background ,background :foreground ,magenta))))
 
      ;; IDO
      (ido-subdir ((,class (:foreground ,faintest))))
@@ -415,6 +416,7 @@ names to which it refers are bound."
      (magit-section-title ((,class (:foreground ,blue :background nil :weight normal))))
      (magit-log-head-label-default ((,class (:foreground ,yellow :background ,background :weight normal :box nil))))
      (magit-log-head-label-wip ((,class (:foreground ,faintest :background ,background :weight normal :box nil))))
+     (magit-cherry-equivalent ((,class (:foreground ,blue :background ,background :weight normal :box nil))))
 
      (link ((,class (:foreground nil :underline nil :weight normal :slant italic))))
      (widget-button ((,class (:underline nil))))
