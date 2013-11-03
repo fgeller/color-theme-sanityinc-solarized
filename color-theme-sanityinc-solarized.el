@@ -321,6 +321,10 @@ names to which it refers are bound."
      (show-paren-match ((,class (:background ,base3 :inverse-video t))))
      (show-paren-mismatch ((,class (:background ,magenta))))
 
+     ;; Parenthesis matching (smartparens)
+     (sp-show-pair-match-face ((,class (:background ,base3 :inverse-video t))))
+     (sp-show-pair--mismatch-face ((,class (:background ,magenta))))
+
      ;; Parenthesis matching (mic-paren)
      (paren-face-match ((,class (:inherit show-paren-match))))
      (paren-face-mismatch ((,class (:inherit show-paren-mismatch))))
