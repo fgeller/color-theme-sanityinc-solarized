@@ -186,6 +186,9 @@ names to which it refers are bound."
      (bmkp-light-fringe-autonamed ((,class (:foreground ,blue :background nil))))
      (bmkp-light-fringe-non-autonamed ((,class (:foreground ,yellow :background nil))))
 
+     ;; highlight-symbol-mode
+     (highlight-symbol-face ((,class (:foreground nil :background ,alt-background))))
+
      ;; icicles
      (icicle-Completions-instruction-1 ((,class (:foreground ,blue))))
      (icicle-Completions-instruction-2 ((,class (:foreground ,orange))))
