@@ -47,27 +47,31 @@
 
 (require 'cl)
 
+(defvar limited-colors-p
+  (> 257 (length (defined-colors)))
+   "T if we have access to at most 256 colors.")
+
 (defmacro color-theme-sanityinc-solarized--with-colors (mode &rest body)
   "Execute `BODY' in a scope with variables bound to the various solarized colors.
 
 `MODE' should be set to either 'light or 'dark."
   ;; These are the Generic RGB equivalents of the "official" sRGB hex values
-  `(let* ((base03  "#042028")            ; (0.0159 0.1265 0.1597)
-          (base02  "#0a2832")            ; (0.0394 0.1601 0.1983)
-          (base01  "#465a61")            ; (0.2767 0.3567 0.3830)
-          (base00  "#52676f")            ; (0.3244 0.4072 0.4385)
-          (base0   "#708183")            ; (0.4406 0.5096 0.5169)
-          (base1   "#81908f")            ; (0.5060 0.5649 0.5636)
-          (base2   "#e9e2cb")            ; (0.9161 0.8900 0.7978)
-          (base3   "#fcf4dc")            ; (0.9894 0.9579 0.8641)
-          (yellow  "#a57705")            ; (0.6475 0.4675 0.0235)
-          (orange  "#bd3612")            ; (0.7418 0.2133 0.0735)
-          (red     "#c60007")            ; (0.7770 0.0000 0.0290)
-          (magenta "#c61b6e")            ; (0.7774 0.1080 0.4352)
-          (violet  "#5859b7")            ; (0.3479 0.3514 0.7179)
-          (blue    "#2075c7")            ; (0.1275 0.4627 0.7823)
-          (cyan    "#259185")            ; (0.1468 0.5708 0.5250)
-          (green   "#728a05")            ; (0.4498 0.5412 0.0202)
+  `(let* ((base03  (if limited-colors-p "brightblack"   "#042028")) ; (0.0159 0.1265 0.1597)
+          (base02  (if limited-colors-p "black"         "#0a2832")) ; (0.0394 0.1601 0.1983)
+          (base01  (if limited-colors-p "brightgreen"   "#465a61")) ; (0.2767 0.3567 0.3830)
+          (base00  (if limited-colors-p "brightyellow"  "#52676f")) ; (0.3244 0.4072 0.4385)
+          (base0   (if limited-colors-p "brightblue"    "#708183")) ; (0.4406 0.5096 0.5169)
+          (base1   (if limited-colors-p "brightcyan"    "#81908f")) ; (0.5060 0.5649 0.5636)
+          (base2   (if limited-colors-p "white"         "#e9e2cb")) ; (0.9161 0.8900 0.7978)
+          (base3   (if limited-colors-p "brightwhite"   "#fcf4dc")) ; (0.9894 0.9579 0.8641)
+          (yellow  (if limited-colors-p "yellow"        "#a57705")) ; (0.6475 0.4675 0.0235)
+          (orange  (if limited-colors-p "brightred"     "#bd3612")) ; (0.7418 0.2133 0.0735)
+          (red     (if limited-colors-p "red"           "#c60007")) ; (0.7770 0.0000 0.0290)
+          (magenta (if limited-colors-p "magenta"       "#c61b6e")) ; (0.7774 0.1080 0.4352)
+          (violet  (if limited-colors-p "brightmagenta" "#5859b7")) ; (0.3479 0.3514 0.7179)
+          (blue    (if limited-colors-p "blue"          "#2075c7")) ; (0.1275 0.4627 0.7823)
+          (cyan    (if limited-colors-p "cyan"          "#259185")) ; (0.1468 0.5708 0.5250)
+          (green   (if limited-colors-p "green"         "#728a05")) ; (0.4498 0.5412 0.0202)
           (foregrounds (list base1 base0 base00 base01))
           (backgrounds (list base03 base02))
           (contrast-backgrounds (list base3 base2)))
